@@ -1,0 +1,161 @@
+
+.InfoHead {
+color: rgb(182, 20, 20);
+padding: 160px 0;
+background: 'lightblue';
+}
+
+.InfoRow{
+display: flex;
+margin: 0 -15px -15px -15px;
+flex-wrap: wrap;
+align-items: center;
+flex-direction: 'row-reverse';
+margin-top: 25px;
+background-color: black;
+}
+
+
+.InfoColumn {
+margin-bottom: 10px;
+padding-right: 10px;
+padding-left: 10px;
+flex: 1;
+max-width: 30%;
+flex-basis: 50%;
+
+@media screen and (max-width: 768px){
+max-width: 100%;
+flex-basis: 100%;
+display: flex;
+justify-content: center;
+}}
+
+.InfoColumn2 {
+    margin-bottom: 10px;
+    padding-right: 1px;
+    padding-left: 1px;
+    flex: 1;
+    max-width: 65%;
+    flex-basis: 50%;
+    
+
+    @media screen and (max-width: 768px){
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    }}
+    
+    
+.TextWrapper {
+max-width: 540px;
+padding-top:0;
+padding-bottom: 60px;
+
+@media screen and (max-width: 768px){
+    padding-bottom: 65px;
+}
+}
+
+.TopLine {
+color: red; 
+font-size: 18px;
+line-height: 16px;
+letter-spacing: 1.4px;
+margin-bottom: 16px;
+}
+
+.Heading {
+margin-bottom: 24px;
+font-size: 4rem;
+font-weight: bolder;
+line-height: 1.1;
+color:'#f7f8fa' ;
+color: white;
+
+}
+
+.Subtitle {
+max-width: 440px;
+margin-bottom: 35px;
+font-size: 18px;
+line-height: 24px;
+color: rgb(226, 38, 195);
+}
+
+
+.Subtitle2 {
+    max-width: 540px;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    
+    line-height: 50px;
+    color: black;
+    }
+
+    
+.ImgWrapper {
+max-width: 555ex;
+display: flex;
+justify-content: 'flex-start';
+}
+
+.Img {
+padding-right: 0;
+border: 0;
+max-width: 80%;
+vertical-align: middle;
+display: inline-block;
+max-height: 500px;
+}
+
+.InfoRow2{
+    display: flex;
+    margin: 0 -15px -15px -15px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: 'row-reverse';
+    margin-top: 100px;
+    
+    }
+
+    .div1{
+        display: flex;
+        margin-left: 20px;
+        width: 150px;
+        height:150px;
+        border-top-left-radius: 30%;
+        background-color: rgb(193, 207, 231);
+        margin-top: -50px;
+        color: purple;
+        border: solid 2px white;
+        
+    }
+    .div2{
+        display: flex;
+        margin-left: -100px;
+        margin-top: 60px;
+        width: 180px;
+        height: 180px;
+        border-top-left-radius: 26%;
+        background-color: rgb(210, 241, 153);
+        border: solid 2px white;
+        color: white;
+        
+    }
+    .div3{
+        display: flex;
+        margin-left: -150px;
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        border-top-left-radius: 50%;
+        background-color: rgb(190, 240, 240);
+        border: solid 2px white;
+        color: white;
+        text-align: center;
+        
+        align-content: center;
+        align-items: center;
+    }
