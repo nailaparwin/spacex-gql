@@ -3720,7 +3720,7 @@ chokidar@^2.0.2, chokidar@^2.1.8:
     readdirp "^2.2.1"
     upath "^1.1.1"
   optionalDependencies:
-    fsevents "^1.2.7"
+    
 
 chokidar@^3.3.0:
   version "3.3.1"
