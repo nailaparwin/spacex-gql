@@ -3720,7 +3720,7 @@ chokidar@^2.0.2, chokidar@^2.1.8:
     readdirp "^2.2.1"
     upath "^1.1.1"
   optionalDependencies:
-   
+    fsevents "^1.2.7"
 
 chokidar@^3.3.0:
   version "3.3.1"
@@ -3735,7 +3735,7 @@ chokidar@^3.3.0:
     normalize-path "~3.0.0"
     readdirp "~3.3.0"
   optionalDependencies:
-    
+    fsevents "~2.1.2"
 
 chokidar@^3.4.2:
   version "3.4.2"
@@ -3750,7 +3750,7 @@ chokidar@^3.4.2:
     normalize-path "~3.0.0"
     readdirp "~3.4.0"
   optionalDependencies:
-  
+    fsevents "~2.1.2"
 
 chownr@^1.1.1, chownr@^1.1.2:
   version "1.1.4"
@@ -5820,6 +5820,19 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
+fsevents@2.1.2, fsevents@~2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.2.tgz#4c0a1fb34bc68e543b4b82a9ec392bfbda840805"
+  integrity sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3EYPPJ0dOOjvx32ldZA==
+
+fsevents@^1.2.7:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.12.tgz#db7e0d8ec3b0b45724fd4d83d43554a8f1f0de5c"
+  integrity sha512-Ggd/Ktt7E7I8pxZRbGIs7vwqAPscSESMrCSkx2FtWeqmheJgCo2R74fTsZFCifr0VTPwqRpPv17+6b8Zp7th0Q==
+  dependencies:
+    bindings "^1.5.0"
+    nan "^2.12.1"
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -7139,7 +7152,7 @@ jest-haste-map@^24.9.0:
     sane "^4.0.3"
     walker "^1.0.7"
   optionalDependencies:
-   
+    fsevents "^1.2.7"
 
 jest-jasmine2@^24.9.0:
   version "24.9.0"
@@ -10171,7 +10184,7 @@ react-scripts@3.4.3:
     webpack-manifest-plugin "2.2.0"
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
-   
+    fsevents "2.1.2"
 
 react@^16.13.1:
   version "16.13.1"
