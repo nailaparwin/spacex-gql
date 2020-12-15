@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
-import {gql, ApolloProvider, InMemoryCache, ApolloClient} from '@apollo/client';
+import {ApolloProvider, InMemoryCache, ApolloClient} from '@apollo/client';
 import { BrowserRouter as Router } from 'react-router-dom'
 import swDev from './swDev';
 

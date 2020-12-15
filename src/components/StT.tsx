@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Fab from '@material-ui/core/Fab';
-import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import Zoom from '@material-ui/core/Zoom';
 import { useNavigate } from 'react-router-dom';
 

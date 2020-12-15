@@ -1,20 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './style.css'
-import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
-import SendIcon from '@material-ui/icons/Send';
-import { Routes, Route, useNavigate } from 'react-router';
-import Launches from '../Launches';
-import bakgrd from './images/pic.png';
+import { useNavigate } from 'react-router';
 import images1 from './images/r2.png';
 import rocket from './images/r1.png';
 import spacex from './images/spacex.png';
-import upcoming from './images/up2.png';
 import hide from './images/logo.png';
-import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
+
 
 const Header = () => {
     const navigate = useNavigate();
@@ -40,7 +33,7 @@ const Header = () => {
                      <div className='boxes'>
                     <div id="container">
                         <div className='up'>
-                            <img src={hide} width="110%" />
+                            <img src={hide} width="110%" alt="hidden" />
                             
                         </div>
                     </div>

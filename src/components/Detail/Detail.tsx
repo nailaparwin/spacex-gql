@@ -1,10 +1,6 @@
 import React from 'react';
 import './styles.css'
 import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
-import SendIcon from '@material-ui/icons/Send';
-import { Routes, Route, useNavigate } from 'react-router';
 import { useParams } from 'react-router-dom';
 import { LanuchesQuery } from '../../generated/graphql';
 
@@ -22,7 +18,7 @@ const Detail: React.FC<Props> = ({data}) => {
   console.log(rowparam)
   console.log(rows)
     let datarow : any;
-
+// eslint-disable-next-line
     {!!rows && rows.map ((row) => {
                         
         return ( row?.mission_name === arr[0] ? (

@@ -1,7 +1,5 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router';

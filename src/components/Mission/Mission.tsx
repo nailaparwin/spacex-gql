@@ -10,7 +10,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -19,8 +18,7 @@ import TablePagination from '@material-ui/core/TablePagination';
 import Avatar from '@material-ui/core/Avatar';
 import spaceship from './../Launches/spaceship.png';
 import Grid from '@material-ui/core/Grid';
-import HomeIcon from '@material-ui/icons/Home';
-import { Routes, Route, useNavigate } from 'react-router';
+//import { useNavigate } from 'react-router';
 import './style.css';
 
 const useRowStyles = makeStyles((theme: Theme) =>
@@ -107,7 +105,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
   const { row } = props;
   const [open, setOpen] = React.useState(false);
   const classes = useRowStyles();
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   
   return (
     <React.Fragment>
@@ -149,10 +147,10 @@ function Row(props: { row: ReturnType<typeof createData> }) {
                   
                     <TableRow key={row.mission_id}>
                     <TableCell component="th" scope="row">
-                    <img src={row.links.flickr_images[0]} alt="image" width="200px" height="200px"/>
+                    <img src={row.links.flickr_images[0]} alt="mission" width="200px" height="200px"/>
                       </TableCell>
-                      <TableCell><img src={row.links.flickr_images[1]} alt="image" width="200px" height="200px"/></TableCell>
-                      <TableCell align="right"><img src={row.links.flickr_images[2]} alt="image" width="200px" height="200px"/></TableCell>
+                      <TableCell><img src={row.links.flickr_images[1]} alt="mission" width="200px" height="200px"/></TableCell>
+                      <TableCell align="right"><img src={row.links.flickr_images[2]} alt="mission" width="200px" height="200px"/></TableCell>
                       
                       
                     </TableRow>

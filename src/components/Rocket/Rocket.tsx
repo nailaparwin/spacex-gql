@@ -16,10 +16,9 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { RocketsQuery } from '../../generated/graphql';
 import TablePagination from '@material-ui/core/TablePagination';
 import Avatar from '@material-ui/core/Avatar';
-import spaceship from './../Launch/spaceship.png';
 import Grid from '@material-ui/core/Grid';
-import { deepOrange, deepPurple } from '@material-ui/core/colors';
-import { Routes, Route, useNavigate } from 'react-router';
+import { deepPurple } from '@material-ui/core/colors';
+//import { useNavigate } from 'react-router';
 import './style.css';
 
 const useRowStyles = makeStyles((theme: Theme) =>
@@ -93,7 +92,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
   const { row } = props;
   const [open, setOpen] = React.useState(false);
   const classes = useRowStyles();
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   
   return (
     <React.Fragment>

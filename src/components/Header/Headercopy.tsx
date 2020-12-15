@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import './style.css'
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
-import SendIcon from '@material-ui/icons/Send';
-import { Routes, Route, useNavigate } from 'react-router';
-import Launches from '../Launches';
+import { useNavigate } from 'react-router';
 import bakgrd from './images/pic.png';
 import images1 from './images/r2.png';
 import rocket from './images/r1.png';
