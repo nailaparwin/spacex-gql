@@ -27,6 +27,7 @@ createStyles({
     '& > *': {
       borderBottom: 'unset',
       backgroundColor: '#B0DFE5',
+      
     },
   },
   large: {
@@ -115,15 +116,16 @@ function Row(props: { row: ReturnType<typeof createData> }) {
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell align="right">
+        <TableCell align="right" >
         <Avatar className={classes.large} variant="square" alt="mission image" src={ row.links.flickr_images.length > 0 ? row.links.flickr_images[0] : spaceship} />
           
         </TableCell>
-        <TableCell component="th" scope="row" align="left">
+        <TableCell component="th" scope="row" align="left" className="tc3">
         {row.mission_id}
         </TableCell>
-        <TableCell align="right">{row.mission_name}</TableCell>
-        <TableCell align="right">{row.details}</TableCell>
+        <TableCell className="tc3">{row.mission_name}</TableCell>
+        
+        <TableCell align="right" className="hidden">{row.details}</TableCell>
         
         
       </TableRow>
@@ -134,7 +136,7 @@ function Row(props: { row: ReturnType<typeof createData> }) {
               <Typography variant="h6" gutterBottom component="div">
                 Mission Highlights
               </Typography>
-              <Table size="small" aria-label="purchases">
+              <Table size="small" className="small-table">
                 <TableHead>
                   <TableRow>
                     <TableCell></TableCell>
@@ -147,10 +149,10 @@ function Row(props: { row: ReturnType<typeof createData> }) {
                   
                     <TableRow key={row.mission_id}>
                     <TableCell component="th" scope="row">
-                    <img src={row.links.flickr_images[0]} alt="mission" width="200px" height="200px"/>
+                    <img src={row.links.flickr_images[0]} alt="mission" width="200px" height="200px" className="small-screen"/>
                       </TableCell>
-                      <TableCell><img src={row.links.flickr_images[1]} alt="mission" width="200px" height="200px"/></TableCell>
-                      <TableCell align="right"><img src={row.links.flickr_images[2]} alt="mission" width="200px" height="200px"/></TableCell>
+                      <TableCell><img src={row.links.flickr_images[1]} alt="mission" width="200px" height="200px" className="small-screen" /></TableCell>
+                      <TableCell align="right"><img src={row.links.flickr_images[2]} alt="mission" width="200px" height="200px" className="small-screen" /></TableCell>
                       
                       
                     </TableRow>
@@ -199,14 +201,14 @@ const Launches: React.FC<Props> = ({data}) => {
         <Grid item xs={12} md={10} style={{ padding: "4px" }}>
     <Paper className={classes.root}>
     <TableContainer component={Paper}>
-      <Table aria-label="collapsible table">
+      <Table aria-label="collapsible table" className="small-table">
         <TableHead >
-          <TableRow style={{backgroundColor:'#4C516D', height:'80px'}}>
+          <TableRow style={{backgroundColor:'#4C516D', height:'80px'}} >
             <TableCell />
-            <TableCell className='tc' style={{color:'white'}}>Mission </TableCell>
-            <TableCell className='tc' style={{color:'white'}} align="left">Mission ID</TableCell>
-            <TableCell className='tc' style={{color:'white'}} align="right">Mission Name</TableCell>
-            <TableCell className='tc' style={{color:'white'}} align="right">Details</TableCell>            
+            <TableCell  style={{color:'white'}}>Mission </TableCell>
+            <TableCell className='tc3' style={{color:'white'}} align="left">Mission ID</TableCell>
+            <TableCell className='tc3' style={{color:'white'}} align="left">Mission Name</TableCell>
+            <TableCell className='hidden' style={{color:'white'}} align="right">Details</TableCell>            
           </TableRow>
         </TableHead>
         <TableBody>

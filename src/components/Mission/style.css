@@ -1,0 +1,31 @@
+@media only screen and (max-width: 360px) {
+    .boxes .box {
+        float: left;
+        width:100%;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    .hidden{                                  
+        visibility: collapse;        
+        display:none;
+
+    }
+    .small-screen{
+        width: 60px;
+        height: 60px;
+        padding:0px;
+        margin:0px;
+        float:left;
+    }
+    .tc3{
+        width:60px;
+        max-width: 60px;
+        
+    }
+    .small-table{
+        max-width: 300px;
+        
+    }
+   
+  }
