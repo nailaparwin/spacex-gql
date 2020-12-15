@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Box from '@material-ui/core/Box';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -36,7 +35,7 @@ const App = () => {
      <div className={classes.root}>
         <Grid container justify={"center"}>
        
-        <Grid item xs={12} md={10} style={{ padding: "4px" }}>
+        <Grid item xs={12} md={12} style={{ padding: "4px" }}>
           {/* <Paper style={{ overflowX: "auto" }}> */}          
           <Routes>		
           <Route path="/" element={<Header/>}> </Route>

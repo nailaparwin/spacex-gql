@@ -1,8 +1,13 @@
 
+.InfoHead {
+color: rgb(182, 20, 20);
+padding: 160px 0;
+background: 'lightblue';
+}
+
 .InfoRow{
 display: flex;
-margin: 0px;
-padding: 0px;
+margin: 0 -15px -15px -15px;
 flex-wrap: wrap;
 align-items: center;
 flex-direction: 'row-reverse';
@@ -13,9 +18,10 @@ background-color: black;
 
 .InfoColumn {
 margin-bottom: 10px;
+padding-right: 10px;
 padding-left: 10px;
 flex: 1;
-max-width: 45%;
+max-width: 30%;
 flex-basis: 50%;
 
 @media screen and (max-width: 768px){
@@ -26,11 +32,13 @@ justify-content: center;
 }}
 
 .InfoColumn2 {
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    padding-right: 1px;
+    padding-left: 1px;
     flex: 1;
-    max-width: 50%;
+    max-width: 65%;
     flex-basis: 50%;
-    padding-right: 0px;
+    
 
     @media screen and (max-width: 768px){
     max-width: 100%;
@@ -63,8 +71,8 @@ margin-bottom: 24px;
 font-size: 4rem;
 font-weight: bolder;
 line-height: 1.1;
-color: rgb(214, 72, 214);
-/* color: white; */
+color:'#f7f8fa' ;
+color: white;
 
 }
 
@@ -73,8 +81,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
-/*color: rgb(226, 38, 195);*/
-color:white;
+color: rgb(226, 38, 195);
 }
 
 
@@ -151,78 +158,4 @@ max-height: 500px;
         
         align-content: center;
         align-items: center;
-    }
-
-    .explore{
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 15px;
-        background-color:  #35424a;
-        color: #fff;
-        /* background-color: purple; */
-    }
-    .explore h3 {
-        float: left;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .explore Button{
-        float:right;
-        margin-top:15px;
-    }
-    .container{
-        width: 80%;
-        margin: auto;
-        overflow: hidden; /* i dont want scroll bar , i want content hidden if goes out */
-    }
-
-    .boxes{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .boxes .box{
-        float: left;
-        width:30%;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    .boxes .box img{
-        width: 180px;
-        
-    }
-
-    .boxes .box h3{
-        color:rgb(22, 21, 21);
-        
-    }
-
-    .boxes .box p{
-        color:rgb(29, 28, 28);
-        
-    }
-
-    .boxes .up{
-        float: left;
-        width:90%;
-        
-        text-align: center;
-    }
-
-    footer {
-        clear: both;
-        padding: 20px;
-        margin-top: 20px;
-        color: #fff;
-        background-color: #35424a;
-        /* background-color: black; */
-        text-align: center;
-    }
-
-    footer h3{
-        margin: 0%;
-        padding: 0%;
-        color: white;
     }
